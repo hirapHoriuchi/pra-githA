@@ -15,4 +15,4 @@ jobs:
         id: count
         run: echo "::set-output name=commit_count::$(git rev-list --count HEAD)"
       - name: Display Count
-        run: echo "Number of commits: \${{ steps.count.outputs.commit_count }}"
+        run: echo "Number of commits:${{ steps.count.outputs.commit_count }}"
